@@ -1,0 +1,13 @@
+n=int(input())
+arr=list(map(int,input().split()))
+
+total=0
+b=[]
+for i in range(len(arr)):
+    if arr[i]>1000:
+        tax=(arr[i]-1000)/10
+        #print(int(tax))
+        b.append(tax)
+        print(b)
+print(int(sum(b)))
+        
